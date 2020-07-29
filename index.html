@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
   <link rel="stylesheet" href="./src/css/main.css">
   <title>Frontend Mentor | [Challenge Name Here]</title>
   <script src="https://kit.fontawesome.com/1db2702c51.js" crossorigin="anonymous"></script>
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 11px; text-align: center; margin-top: 40px;}
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
@@ -47,14 +47,18 @@
           <img src="./src/images/dog-image-3.jpg" alt="dog" class="chat--images__photo">
         </div>
         <div class="phone__chat--send">
-          <p class="chat__message--send">
-            Here are a few pictures. She’s a happy girl!
-          </p>
+          <div class="containerChat">
+            <p class="chat__message--send">
+              Here are a few pictures. She’s a happy girl!
+            </p>
+          </div>
         </div>
         <div class="phone__chat--send">
-          <p class="chat__message--send">
-            Can you make it?
-          </p>
+          <div class="containerChat">
+            <p class="chat__message--send">
+              Can you make it?
+            </p>
+          </div>
         </div>
         <div class="phone__chat--receive">
           <p class="chat--message__receive">
@@ -62,44 +66,44 @@
           </p>
         </div>
         <div class="phone__chat--special">
-          <span class="chat--special__time">
-            30 minute walk            
-          </span>
+          <div class="container">
+            <div class="circle"></div>
+            <span class="chat--special__time">
+              30 minute walk            
+            </span>
+          </div>
           <span class="chat--special__cash">$29</span>
         </div>
         <div class="phone__chat--special">
-          <span class="chat--special__time">1 hour walk</span>
+          <div class="container">
+            <div class="circle"></div>
+            <span class="chat--special__time">1 hour walk</span>
+          </div>
           <span class="chat--special__cash">$49</span>
         </div>
       </div>
-      <div class="phone__content"></div>
+      <div class="phone__input">
+        <input type="text" placeholder="Type a message..." class="phone__input--text">
+        <button class="containerIcon">
+          <i class="fas fa-chevron-right phone__input--icon" ></i>
+        </button>
+      </div>
     </section>
+    <section class="presentation">
+      <h1 class="presentation__title">
+        Simple booking
+      </h1>
+      <p class="presentation__text">
+        Stay in touch with our dog walkers through the chat interface. This makes it easy to 
+        discuss arrangements and make bookings. Once the walk has been completed you can rate 
+        your walker and book again all through the chat.
+      </p>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://twitter.com/LeoCode0" target="_blank">LeoCode0</a>.
+      </div>
+    </section>
+    <div class="main__figure second"></div>
   </main>
-
-  <!-- 
-  
-
-  
-
-
-
-
-  
-
-  
-  
-
-  Type a message…
-
-  Simple booking
-
-  Stay in touch with our dog walkers through the chat interface. This makes it easy to 
-  discuss arrangements and make bookings. Once the walk has been completed you can rate 
-  your walker and book again all through the chat.
-   -->
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 </html>
